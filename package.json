@@ -4,7 +4,11 @@
   "description": "A sane implementation of the DOM.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha -R spec"
+    "test": "npm run test-spec && npm run test-optimized && npm run test-benchmark && npm run test-coverage",
+    "test-spec": "./node_modules/.bin/mocha test/test-*.js",
+    "test-doc": "./node_modules/.bin/mocha -R doc test/test-*.js | cat docs/_begin.html - docs/_end.html > docs/index.html",
+    "test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly test/test-*.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
@@ -29,7 +33,12 @@
     "url": "https://github.com/nerdlabs/DOM2/issues"
   },
   "devDependencies": {
-    "mocha": "~1.21.4"
+    "chai": "~1.9.2",
+    "mocha": "~1.21.4",
+    "sinon": "~1.10.3",
+    "mocha-lcov-reporter": "0.0.1",
+    "coveralls": "~2.11.2",
+    "istanbul": "~0.3.2"
   },
   "dependencies": {
     "fasthtml": "0.0.1",
