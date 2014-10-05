@@ -42,6 +42,6 @@
   },
   "dependencies": {
     "fasthtml": "0.0.1",
-    "vtree": "0.0.21"
+    "vtree": "git://github.com/zaubernerd/vtree#fresh-object-array"
   }
 }
