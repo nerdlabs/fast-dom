@@ -1,5 +1,5 @@
 {
-  "name": "DOM2",
+  "name": "dom2",
   "version": "0.0.0",
   "description": "A sane implementation of the DOM.",
   "main": "lib/index.js",
