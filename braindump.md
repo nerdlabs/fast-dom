@@ -2,7 +2,7 @@
 
 
 ## usage
-```
+```javascript
 var dom = require('dom2');
 
 dom.install(this);
