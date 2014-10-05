@@ -33,7 +33,7 @@ describe('VNode facade', function () {
             child = null;
         });
 
-        it('should create a now VNode', function () {
+        it('should create a new VNode', function () {
             assert.instanceOf(child, VNode);
         });
 
