@@ -2,7 +2,7 @@
 
 
 ## usage
-
+```
 var dom = require('dom2');
 
 dom.install(this);
@@ -13,32 +13,32 @@ document.body.innerHTML = '<div><h2>test</h2><span id="foo"></span></div>';
 var vNode = document.getElementById('foo');
 vNode.innerHTML = '<h3>foo</h3>';
 vNode.setAttribute('class', 'bar');
-
+```
 
 
 ## methods that need a new facade
 
 ### on `document` object
-* document.createElement
-* document.createTextNode
-* document.createDocumentFragment
+* `document.createElement`
+* `document.createTextNode`
+* `document.createDocumentFragment`
 
 ### on `Element.prototype`
-* Element.innerHTML
-* Element.innerText
-* Element.textContent
-* Element.get/setAttribute
-* Element.classList
-* Element.dataset
-* Element.appendChild
+* `Element.innerHTML`
+* `Element.innerText`
+* `Element.textContent`
+* `Element.get/setAttribute`
+* `Element.classList`
+* `Element.dataset`
+* `Element.appendChild`
 
 ### shared between `document` and `Element.prototype`
-* document.getElementById
-* document.getElementsByName
-* document.getElementsByTagName
-* document.getElementsByClassName
-* document.querySelector
-* document.querySelectorAll
+* `document.getElementById`
+* `document.getElementsByName`
+* `document.getElementsByTagName`
+* `document.getElementsByClassName`
+* `document.querySelector`
+* `document.querySelectorAll`
 
 
 ## how dom nodes are constructed / how the dom node prototype chain works
