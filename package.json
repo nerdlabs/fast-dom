@@ -9,7 +9,8 @@
     "test-doc": "./node_modules/.bin/mocha -R doc test/test-*.js | cat docs/_begin.html - docs/_end.html > docs/index.html",
     "test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly test/test-*.js",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "install-hooks": "cp ./hooks/* ./.git/hooks/"
+    "install-hooks": "cp ./hooks/* ./.git/hooks/",
+    "jshint": "find lib -name '*.js' | xargs ./node_modules/.bin/jshint -c .jshintrc"
   },
   "repository": {
     "type": "git",
@@ -39,7 +40,8 @@
     "sinon": "~1.10.3",
     "mocha-lcov-reporter": "0.0.1",
     "coveralls": "~2.11.2",
-    "istanbul": "~0.3.2"
+    "istanbul": "~0.3.2",
+    "jshint": "~2.5.6"
   },
   "dependencies": {
     "fasthtml": "0.0.1",
