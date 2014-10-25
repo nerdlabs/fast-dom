@@ -5,12 +5,13 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run test-spec && npm run test-coverage",
-    "test-spec": "./node_modules/.bin/mocha test/test-*.js",
-    "test-doc": "./node_modules/.bin/mocha -R doc test/test-*.js | cat docs/_begin.html - docs/_end.html > docs/index.html",
-    "test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly test/test-*.js",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test-spec": "mocha test/test-*.js",
+    "test-doc": "mocha -R doc test/test-*.js | cat docs/_begin.html - docs/_end.html > docs/index.html",
+    "test-coverage": "istanbul cover _mocha --report lcovonly test/test-*.js",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "install-hooks": "cp ./hooks/* ./.git/hooks/",
-    "jshint": "find lib -name '*.js' | xargs ./node_modules/.bin/jshint -c .jshintrc"
+    "jshint": "find lib -name '*.js' | xargs jshint -c .jshintrc",
+    "jscs": "jscs --config .jscsrc lib/"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,8 @@
     "mocha-lcov-reporter": "0.0.1",
     "coveralls": "~2.11.2",
     "istanbul": "~0.3.2",
-    "jshint": "~2.5.6"
+    "jshint": "~2.5.6",
+    "jscs": "~1.7.1"
   },
   "dependencies": {
     "fasthtml": "0.0.1",
