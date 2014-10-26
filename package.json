@@ -4,6 +4,7 @@
   "description": "A sane implementation of the DOM.",
   "main": "lib/index.js",
   "scripts": {
+    "watch": "nodemon --exec \"npm run test-spec\"",
     "test": "npm run test-spec && npm run test-coverage",
     "test-spec": "mocha test/test-*.js",
     "test-doc": "mocha -R doc test/test-*.js | cat docs/_begin.html - docs/_end.html > docs/index.html",
@@ -37,13 +38,14 @@
   },
   "devDependencies": {
     "chai": "~1.9.2",
-    "mocha": "~1.21.4",
-    "sinon": "~1.10.3",
-    "mocha-lcov-reporter": "0.0.1",
     "coveralls": "~2.11.2",
     "istanbul": "~0.3.2",
+    "jscs": "~1.7.1",
     "jshint": "~2.5.6",
-    "jscs": "~1.7.1"
+    "mocha": "~1.21.4",
+    "mocha-lcov-reporter": "0.0.1",
+    "nodemon": "^1.2.1",
+    "sinon": "~1.10.3"
   },
   "dependencies": {
     "fasthtml": "0.0.1",
