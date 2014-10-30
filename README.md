@@ -109,7 +109,7 @@ vNode.setAttribute('class', 'bar');
 
 
 
-[0]: http://img.shields.io/travis/nerdlabs/fast-dom.svg
+[0]: https://img.shields.io/travis/nerdlabs/fast-dom.svg
 [1]: https://travis-ci.org/nerdlabs/fast-dom
 [2]: https://img.shields.io/coveralls/nerdlabs/fast-dom.svg
 [3]: https://coveralls.io/r/nerdlabs/fast-dom
