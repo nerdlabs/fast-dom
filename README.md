@@ -1,4 +1,4 @@
-# DOM2 [![Build Status][0]][1] [![Coverage Status][2]][3]
+# fast-dom [![Build Status][0]][1] [![Coverage Status][2]][3]
 
 
 
@@ -60,7 +60,7 @@ console.log('children:', JSON.stringify(children[0], null, 4));
 
 ## usage
 
-var dom = require('dom2');
+var dom = require('fast-dom');
 
 dom.install(this);
 
@@ -109,7 +109,7 @@ vNode.setAttribute('class', 'bar');
 
 
 
-[0]: https://travis-ci.org/nerdlabs/DOM2.svg?branch=master
-[1]: https://travis-ci.org/nerdlabs/DOM2
-[2]: https://img.shields.io/coveralls/nerdlabs/DOM2.svg
-[3]: https://coveralls.io/r/nerdlabs/DOM2
+[0]: https://travis-ci.org/nerdlabs/fast-dom.svg?branch=master
+[1]: https://travis-ci.org/nerdlabs/fast-dom
+[2]: https://img.shields.io/coveralls/nerdlabs/fast-dom.svg
+[3]: https://coveralls.io/r/nerdlabs/fast-dom
