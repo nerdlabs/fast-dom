@@ -59,7 +59,7 @@ console.log('children:', JSON.stringify(children[0], null, 4));
 ```
 
 ## usage
-
+```js
 var dom = require('fast-dom');
 
 dom.install(this);
@@ -70,7 +70,7 @@ document.body.innerHTML = '<div><h2>test</h2><span id="foo"></span></div>';
 var vNode = document.getElementById('foo');
 vNode.innerHTML = '<h3>foo</h3>';
 vNode.setAttribute('class', 'bar');
-
+```
 
 
 ## methods that need a new facade
